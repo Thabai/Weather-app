@@ -1,15 +1,85 @@
-.main-container ul li{
-  list-style-type: none;
+.container {
+  width: 60%;
+  align-content: center;
+  margin: auto;
+  background-color: rgb(244, 248, 248);
 }
 
-.desc {
-  text-transform: capitalize;
+.main-title {
+  text-align: center;
 }
 
-.weather-search {
+.name_container{
+  width: 80%;
   display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.city_info{
+  margin-top: 40px;
+}
+/*search bar*/
+.weather-search {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
 }
 
 .update-button {
   margin-top: 25px;
+}
+
+.line {
+  padding-top: 10px;
+  border-bottom: solid 2px rgb(17, 1, 75);
+}
+/*components*/
+.suntimes {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.sunbox{
+  padding: 10px;
+}
+
+@media screen and (max-width:1860px) {
+  .name_container{
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+}
+
+@media screen and (max-width:1440px) {
+.city_info{
+  width: 100%;
+}
+.weather {
+  width: 100%;
+}
+}
+
+@media screen and (max-width:1360px) {
+ .name_container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  justify-content: space-between;
+}
+}
+@media screen and (max-width:850px) {
+
+ .suntimes {
+  display: block;
+}
+.city_info{
+  border-bottom: solid 1px rgb(17, 1, 75);
+}
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SearchBar = ({ searchQuery, setSearchQuery}) => {
-  const BarStyling = {width:"20rem",background:"#F2F1F9", border:"none", padding:"0.5rem"};
+  const BarStyling = {width:"200px",background:"#F2F1F9", border:"none", padding:"10px"};
   return (
     <div>
     <input 
@@ -9,7 +9,7 @@ const SearchBar = ({ searchQuery, setSearchQuery}) => {
      type = 'text'
      placeholder={"Search City"}
      value={searchQuery}
-     onChange={e => setSearchQuery(e.target.value)}
+     onChange={e => setSearchQuery(e.target.value.toUpperCase())}
         />
     </div>
 );
